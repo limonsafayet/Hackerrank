@@ -36,16 +36,14 @@
 # Remove all arrays that sum to n = 2 to leave only the valid permutations.
 
 if __name__ == '__main__':
-    N = int(input())
+    x = int(input())
+    y = int(input())
+    z = int(input())
+    n = int(input())
     
-    arr = []
+    ListOf_x = [ a for a in range(x+1) ] 
+    ListOf_y = [ a for a in range(y+1) ] 
+    ListOf_z = [ a for a in range(z+1) ] 
+   
+    print([[x, y, z] for x in ListOf_x for y in ListOf_y for z in ListOf_z if x + y + z != n])
     
-    for i in range(N):
-        
-        command = input()
-        extract=command.split(' ')
-        
-        if extract[0] == "append":
-            arr.append(int(extract[1]))
-        elif extract[0] == "print":
-            print(arr)
