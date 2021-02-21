@@ -50,5 +50,5 @@ def print_formatted(number):
         print("{0:{w}d} {0:{w}o} {0:{w}X} {0:{w}b}".format(i, w = width))
         
 if __name__ == '__main__':
-    n = int(raw_input())
+    n = int(input())
     print_formatted(n)
